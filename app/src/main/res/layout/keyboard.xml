@@ -1,9 +1,76 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<android.inputmethodservice.KeyboardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/keyboard"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:keyPreviewLayout ="@layout/preview"
-    />
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:id="@+id/relativeLayout">
+
+        <Button
+            android:id="@+id/newbutton"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:scaleType="fitEnd"
+            android:text="ABC"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="52dp"
+            android:layout_alignBaseline="@+id/newbutton"
+            android:layout_alignBottom="@+id/newbutton"
+            android:layout_toEndOf="@+id/newbutton"
+            android:layout_toRightOf="@+id/newbutton"
+            android:padding="10dp"
+            android:scaleType="fitEnd"
+            android:text="\?123"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:layout_toLeftOf="@+id/button4"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toStartOf="@+id/button4"
+            android:text="FEEL" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button"
+            android:layout_alignBottom="@+id/button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Emoji" />
+
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="69dp"
+        android:keyPreviewLayout="@layout/preview"
+        android:visibility="visible" />
+
+</RelativeLayout>

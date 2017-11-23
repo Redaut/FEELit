@@ -1,5 +1,6 @@
 package com.example.akshay.keykey;
 
+import android.content.Intent;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
@@ -7,6 +8,8 @@ import android.media.AudioManager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
+import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * Created by AKSHAY on 11/16/2017.
@@ -15,16 +18,59 @@ import android.view.inputmethod.InputConnection;
 public class SimpleIME extends InputMethodService
         implements KeyboardView.OnKeyboardActionListener {
 
-    private KeyboardView kv;
-    private Keyboard keyboard;
+    private KeyboardView kv, kv2;
+    private Keyboard keyboard, keyboard2;
 
-    @Override
+ /*   @Override
     public View onCreateInputView() {
         kv = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
         keyboard = new Keyboard(this, R.xml.qwerty);
         kv.setKeyboard(keyboard);
         kv.setOnKeyboardActionListener(this);
         return kv;
+    }
+*/
+    @Override
+    public View onCreateInputView() {
+
+        final View root = getLayoutInflater().inflate(R.layout.keyboard, null);
+
+        final Button button = (Button) root.findViewById(R.id.button);
+        final Button newbutton = (Button) root.findViewById(R.id.newbutton);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(view==button){
+                   kv.setKeyboard(keyboard2);
+
+                }
+
+
+            }
+        });
+
+        newbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(view==newbutton){
+                    kv.setKeyboard(keyboard);
+
+                }
+
+
+            }
+        });
+
+        kv = (KeyboardView) root.findViewById(R.id.keyboard);
+        kv2 = (KeyboardView) root.findViewById(R.id.keyboard2);
+        keyboard = new Keyboard(this, R.xml.qwerty);
+        keyboard2 = new Keyboard(this, R.xml.qwerty2);
+        kv.setKeyboard(keyboard);
+        kv.setOnKeyboardActionListener(this);
+        return root;
     }
 
     private void playClick(int keyCode){
