@@ -15,7 +15,7 @@
 
         <Button
             android:id="@+id/newbutton"
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="52dp"
 
             android:layout_alignParentLeft="true"
@@ -28,7 +28,7 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="60dp"
+            android:layout_width="wrap_content"
             android:layout_height="52dp"
             android:layout_alignBaseline="@+id/newbutton"
             android:layout_alignBottom="@+id/newbutton"
@@ -41,7 +41,7 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/button"
             android:layout_toEndOf="@+id/button"
@@ -49,16 +49,6 @@
             android:layout_toRightOf="@+id/button"
             android:layout_toStartOf="@+id/button4"
             android:text="FEEL" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/button"
-            android:layout_alignBottom="@+id/button"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:text="Emoji" />
 
     </RelativeLayout>
 
