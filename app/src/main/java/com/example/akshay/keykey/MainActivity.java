@@ -1,5 +1,6 @@
 package com.example.akshay.keykey;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +13,10 @@ import hani.momanii.supernova_emoji_library.Actions.EmojIconActions;
 import hani.momanii.supernova_emoji_library.Helper.EmojiconEditText;
 import hani.momanii.supernova_emoji_library.Helper.EmojiconTextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
+
+
+
 
     private static final String TAG = MainActivity.class.getSimpleName();
     CheckBox mCheckBox;

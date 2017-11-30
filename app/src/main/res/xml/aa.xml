@@ -1,4 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
-</PreferenceScreen>
+<Keyboard android:keyWidth="20%p" android:keyHeight="45dp" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:keyWidth="10%p" android:codes="-21" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-31" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-41" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-51" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-61" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-71" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-81" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-91" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-102" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-5"  android:isRepeatable="true" android:keyIcon="@drawable/image1" />
+    </Row>
+    <Row>
+        <Key android:codes="\uD83D?‍💻" android:keyIcon="@drawable/image1" android:keyEdgeFlags="left" />
+        <Key android:codes="0x1F601" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F602" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F603" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F604" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F605" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F606" android:keyIcon="@drawable/image1" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="0x1F607" android:keyIcon="@drawable/image1" android:keyEdgeFlags="left" />
+        <Key android:codes="0x1F608" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F609" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F60A" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F60B" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F60C" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F60D" android:keyIcon="@drawable/image1" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:codes="0x1F60E" android:keyIcon="@drawable/image1" android:keyEdgeFlags="left"/>
+        <Key android:codes="0x1F60F" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F610" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F611" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F612" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F613" android:keyIcon="@drawable/image1" />
+        <Key android:codes="0x1F614" android:keyIcon="@drawable/image1" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:keyWidth="10%p" android:codes="-3" android:keyEdgeFlags="left" android:keyIcon="@drawable/image1" />
+        <Key android:keyWidth="10%p" android:codes="-11" android:keyLabel="ABC" />
+        <Key android:codes="-10" android:keyWidth="20%p" android:keyLabel="Emoji"/>
+        <Key android:codes="-70" android:keyWidth="20%p" android:keyLabel="Sticker"/>
+        <Key android:codes="-110" android:keyWidth="20%p" android:keyLabel="Pattern" />
+        <Key android:keyWidth="20%p" android:codes="10" android:keyEdgeFlags="right" android:keyIcon="@drawable/image1" />
+    </Row>
+</Keyboard>
